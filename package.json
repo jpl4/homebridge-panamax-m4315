@@ -1,0 +1,13 @@
+{
+  "name": "homebridge-panamax-m4315",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for Panamax M4315",
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=1.0.0"
+  }
+}

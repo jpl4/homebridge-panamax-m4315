@@ -1,0 +1,65 @@
+{
+  "pluginAlias": "PanamaxM4315",
+  "pluginType": "accessory",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Device Name",
+        "type": "string",
+        "required": true,
+        "default": "Panamax M4315"
+      },
+      "ip": {
+        "title": "IP Address",
+        "type": "string",
+        "required": true,
+        "format": "ipv4"
+      },
+      "outlets": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Custom Name",
+              "type": "string",
+              "placeholder": "Enter custom name (optional)"
+            },
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "minItems": 8,
+        "maxItems": 8
+      }
+    }
+  },
+  "form": [
+    "name",
+    "ip",
+    {
+      "key": "outlets",
+      "type": "array",
+      "items": [
+        {
+          "type": "section",
+          "title": "Outlet {{idx}}",
+          "expandable": true,
+          "expanded": false,
+          "items": [
+            {
+              "key": "outlets[].name",
+              "title": "Custom Name:"
+            },
+            "outlets[].enabled"
+          ]
+        }
+      ]
+    }
+  ]
+}
