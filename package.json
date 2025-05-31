@@ -1,18 +1,13 @@
 {
   "name": "homebridge-panamax-m4315",
-  "version": "1.0.1",                     // bumped from 1.0.0
+  "version": "1.0.0",
   "description": "Homebridge plugin for controlling Panamax M4315 PDU.",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin",
-    "homebridge-panamax-m4315",
-    "homebridge-panamax",
     "panamax",
     "pdu"
   ],
-  "peerDependencies": {                   // newly added block
-    "homebridge": ">=1.3.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jpl4/homebridge-panamax-m4315.git"
